@@ -2,7 +2,7 @@ cfile=cube.c objects.c object_common.c own_signal.c
 finial=cube
 CFLAGS=-std=gnu99  -Wall -lncurses -pthread
 
-all:$(finial) clean
+all:$(finial)
 
 $(finial):$(cfile:.c=.o)
 	gcc $(CFLAGS) $^ -o $@
