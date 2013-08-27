@@ -1,1 +1,1 @@
-classic game tetris using ncurses on linux
+classic game "tetris" using ncurses on linux
