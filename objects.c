@@ -253,7 +253,7 @@ void rhook_init(struct object *rhook)
 	seg->brick_cnt = 2;
 	seg->dir       = HORIZONTAL;
 	seg->y	       = -1;
-	seg->x	       = rand() % (NET_SIZE_X - 2);
+	seg->x	       = rand() % (NET_SIZE_X - 3) + 1;
 
 
 	(seg + 1)->y	     = seg->y + 1;
@@ -394,7 +394,7 @@ void rlightning_init(struct object *rlightning)
 	seg->brick_cnt = 2;
 	seg->dir       = VERTICAL;
 	seg->y	       = -1;
-	seg->x	       = rand() % (NET_SIZE_X - 1);
+	seg->x	       = rand() % (NET_SIZE_X - 2) + 1;
 
 
 	(seg + 1)->y	     = seg->y + 1;
